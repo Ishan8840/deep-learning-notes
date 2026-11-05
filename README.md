@@ -1,6 +1,6 @@
 # Field Notes
 
-Ishan’s visual guide to deep learning: 26 study notes, a graph built from their links, and interactive explanations of attention, diffusion, gradient descent, and flow matching.
+Ishan’s visual guide to deep learning: 26 study notes, a graph built from their links, and interactive explanations of attention, diffusion, gradient descent, flow matching, convolution, and advantage estimation.
 
 [Read the site](https://ishan8840.github.io/deep-learning-notes/) · [Implementations](https://github.com/Ishan8840/deep-learning)
 

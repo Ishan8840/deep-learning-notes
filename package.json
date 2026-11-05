@@ -1,1 +1,19 @@
-{"name":"ishan-field-notes","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"node scripts/content.mjs && vite build && node scripts/redirects.mjs"},"dependencies":{"vite":"^7.0.0","marked":"^16.0.0","katex":"^0.16.22","mermaid":"^11.0.0"},"devDependencies":{"playwright":"^1.56.0"}}
+{
+  "name": "ishan-field-notes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "node scripts/content.mjs && vite build && node scripts/redirects.mjs",
+    "predev": "node scripts/content.mjs"
+  },
+  "dependencies": {
+    "vite": "^7.0.0",
+    "marked": "^16.0.0",
+    "katex": "^0.16.22",
+    "mermaid": "^11.0.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  }
+}

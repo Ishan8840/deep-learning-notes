@@ -1,3 +1,5 @@
 node_modules/
 dist/
 .obsidian/
+src/notes.json
+public/media/

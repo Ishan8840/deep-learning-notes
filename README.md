@@ -16,4 +16,21 @@ npm run dev
 
 After editing Markdown, run `node scripts/content.mjs` to regenerate the local preview data. `npm run build` does this automatically and produces `dist/`. Push to `main` to publish through GitHub Pages.
 
-A simple note index leads to single-column articles. The CNN page includes a short animated film of a 3 × 3 filter sliding across an image and computing its feature map. The VAE film shows an image compressing into a latent distribution, sampling, and expanding into reconstructed pixel probabilities. Both films support playback, seeking, and replay; they pause offscreen and do not autoplay with reduced motion enabled. The interface is monochrome, with color reserved for labeled visualization roles. The interactive examples use illustrative data and identify their assumptions in the interface. The graph uses actual links between the published notes. The site supports keyboard navigation, mobile layouts, and reduced-motion preferences.
+## Reading and visual explanations
+
+The home page pairs four expandable chapters with an Obsidian-inspired graph. Its edges come from actual note links. Drag nodes to rearrange them, drag the background to pan, and use the wheel, pinch, or buttons to zoom. Hover or keyboard-focus a node to reveal its connections. Expanding a chapter highlights its notes in the map.
+
+Twenty-two notes have short, seekable visual explanations. Every film shares playback, replay, offscreen pausing, and reduced-motion behavior. These include convolution, VAE and autoencoder bottlenecks, attention and causal masking, patch tokenization, recurrence, LoRA, contrastive matching, expert routing, diffusion, flow matching, MDP interaction, GAE, PPO clipping, and action chunks. Learning rate, query token, lambda, and advantage controls expose useful comparisons.
+
+The diagrams distinguish computed toy examples from schematic illustrations. They do not present illustrative reconstructions, similarities, or action trajectories as trained model outputs. Pages without a film retain their notes and existing diagrams.
+
+The interface is monochrome, with color reserved for visualization roles. Mobile layouts and keyboard navigation are supported.
+
+## Visualization code
+
+- `src/films.js`: shared player, CNN/VAE scenes, and explicit note-to-film mappings.
+- `src/mechanisms.js`: other mechanism scenes and small numerical examples.
+- `src/graph.js`: deterministic force layout, graph interaction, and label placement.
+- `src/main.js`: note navigation, chapter browsing, and search.
+
+Run `npm test` for numerical examples and `npm run build` for the production bundle.

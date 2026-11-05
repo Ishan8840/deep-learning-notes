@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "node scripts/content.mjs && vite build && node scripts/redirects.mjs",
-    "predev": "node scripts/content.mjs"
+    "predev": "node scripts/content.mjs",
+    "test": "node --test"
   },
   "dependencies": {
     "vite": "^7.0.0",

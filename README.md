@@ -16,4 +16,4 @@ npm run dev
 
 After editing Markdown, run `node scripts/content.mjs` to regenerate the local preview data. `npm run build` does this automatically and produces `dist/`. Push to `main` to publish through GitHub Pages.
 
-The interactive examples use illustrative data and identify their assumptions in the interface. The graph uses actual links between the published notes. The site supports keyboard navigation, mobile layouts, and reduced-motion preferences.
+The CNN and VAE pages include playable architecture walkthroughs with tensor shapes matched to the Python implementations. The VAE posterior view supports mean/spread controls and resampling; the CNN page compares average and max pooling. The interface is monochrome, with color reserved for labeled visualization roles. The interactive examples use illustrative data and identify their assumptions in the interface. The graph uses actual links between the published notes. The site supports keyboard navigation, mobile layouts, and reduced-motion preferences.
